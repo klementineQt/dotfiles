@@ -67,7 +67,7 @@ ${tab}${tab}${tab}${tab}${tab}${tab}${tab}${tab}\
 ${voffset 4}${color1}${font conkycolorslogos:size=30}a${voffset -11}\
 ${font Noto Sans Bold:size=20}${color0}arch${font KaratDemo:size=20}\
 ${color1}linux
-${font}${color4}${uid_name 1000}${color3}@$nodename
+${font}${color}${uid_name 1000}${color3}@$nodename
 ${color1}${font Noto Sans Bold:size=12}Basic Info $color${hr 2}
 $font${color2}Kernel:$color ${kernel}
 ${color2}Architecture:$color ${machine}
