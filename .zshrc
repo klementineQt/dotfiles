@@ -11,13 +11,13 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-  git
-  gitfast
-  python
+	git
+	gitfast
+	python
 
-  # Install the following using oh-my-zsh-setup.sh
-  zsh-syntax-highlighting
-  zsh-autosuggestions
+	# Install the following using oh-my-zsh-setup.sh
+	zsh-syntax-highlighting
+	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
