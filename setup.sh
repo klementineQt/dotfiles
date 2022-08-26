@@ -1,17 +1,17 @@
 #!/bin/env zsh
 
-# Install oh-my-zsh
-if [[ ! -e ~/.oh-my-zsh ]]; then
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo pacman -S --needed zsh zsh-autosuggestions zsh-syntax-highlighting
+
+if [ -n $(sudo pacman -Qs yay | grep "local" | grep "oh-my-posh" >> /dev/null) ]
+then
+    wget https://aur.archlinux.org/cgit/aur.git/snapshot/oh-my-posh-bin.tar.gz
+    tar -xf oh-my-posh-bin.tar.gz
+    cd oh-my-posh-bin
+    makepkg -sri
+    cd ..
+    rm -r oh-my-posh-bin*
 fi
 
-# Install zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# Install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# Install the actual dotfiles
 cp -t ~ .vimrc .zshrc
 
 exit
