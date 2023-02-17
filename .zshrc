@@ -1,5 +1,6 @@
 ## Z Shell Configuration File (.zshrc)
-## klementine (Klementine Peach)
+# klementine (Klementine Des Pêches)
+# Made for Arch Linux in WSL (https://wsldl-pg.github.io/ArchW-docs/)
 
 if [ -f ~/.profile ]; then
 	source ~/.profile
@@ -9,6 +10,7 @@ fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$(echo ~)/.oh-my-zsh"
 ZSH_THEME="agnoster" # This is simply my preferred theme, you can find more at https://github.com/robbyrussell/oh-my-zsh/tree/master/themes
+export OHMYPOSHTHEME="$(echo ~)/.poshthemes/M365Princess.omp.json"
 HYPHEN_INSENSITIVE="true"
 export UPDATE_ZSH_DAYS=7 # Comment to use default or set to 0 to disable
 ENABLE_CORRECTION="true"
@@ -24,9 +26,9 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [ -f "/mnt/c/Users/kleme/AppData/Local/Programs/oh-my-posh/themes/M365Princess.omp.json"] ; then
-	eval "$(oh-my-posh init zsh --config /mnt/c/Users/kleme/AppData/Local/Programs/oh-my-posh/themes/M365Princess.omp.json)"
-else
+if [[ -e $(which oh-my-posh) && -e $OHMYPOSHTHEME ]] ; then
+	eval "$(oh-my-posh init zsh --config $OHMYPOSHTHEME)"
+elif [[ -e $(which oh-my-posh) ]] ; then
 	eval "$(oh-my-posh init zsh)"
 fi
 
@@ -47,4 +49,4 @@ alias vimrc="$VISUAL ~/.vimrc"
 alias gcc-strict="gcc -Wall"
 alias gcc-ANSI="gcc-strict -std=c89"
 # The following alias is used for reflector to update the pacman mirrorlist in Arch Linux. Requires reflector
-alias reflector-USrate="reflector --country US --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias reflector-USrate="reflector --country US --age 10 --sort rate --save /etc/pacman.d/mirrorlist"
