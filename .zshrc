@@ -1,6 +1,6 @@
 ## Z Shell Configuration File (.zshrc)
 # klementine (Klementine Des Pêches)
-# Made for Arch Linux in WSL (https://wsldl-pg.github.io/ArchW-docs/)
+# Made primarily for Arch Linux in WSL (https://wsldl-pg.github.io/ArchW-docs/)
 
 # oh-my-zsh
 export ZSH="$(echo ~)/.oh-my-zsh"
@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 # oh-my-posh
 export POSHTHEMES="/usr/share/oh-my-posh/themes"
-export OHMYPOSHTHEME="$POSHTHEMES/M365Princess.omp.json"
+export OHMYPOSHTHEME="$POSHTHEMES/catppuccin.omp.json"
 
 eval "$(oh-my-posh init zsh --config $OHMYPOSHTHEME)"
 
