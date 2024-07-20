@@ -1,5 +1,9 @@
 # klementine's dotfiles
 
+<center>
+<img src="https://i.imgur.com/8ftn63a.png" alt="klem profile pic">
+</center>
+
 These are my personal configs. You may not find them super useful, but they're here for anyone who wants to use them as a base or for ideas <3
 
 Bear in mind that I use Arch on WSL and all the exported variables are my personal preferences, so you will probably need to adapt these a bit.
