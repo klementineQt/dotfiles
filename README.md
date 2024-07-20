@@ -1,8 +1,6 @@
 # klementine's dotfiles
 
-<center>
-<img src="https://i.imgur.com/8ftn63a.png" alt="klem profile pic">
-</center>
+![klem profile pic](https://i.imgur.com/8ftn63a.png)
 
 These are my personal configs. You may not find them super useful, but they're here for anyone who wants to use them as a base or for ideas <3
 
