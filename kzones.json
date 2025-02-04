@@ -1,0 +1,63 @@
+[
+  {
+    "name": "the klem special",
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "height": 50,
+        "width": 100,
+        "color": "#6bf178"
+      },
+      {
+        "x": 0,
+        "y": 50,
+        "height": 50,
+        "width": 100,
+        "color": "#6bf178"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "height": 100,
+        "width": 50,
+        "color": "#00bbf9"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "height": 100,
+        "width": 50,
+        "color": "#00bbf9"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "height": 50,
+        "width": 50,
+        "color": "#ff0054"
+      },
+      {
+        "x": 0,
+        "y": 50,
+        "height": 50,
+        "width": 50,
+        "color": "#ff0054"
+      },
+      {
+        "x": 50,
+        "y": 50,
+        "height": 50,
+        "width": 50,
+        "color": "#ff0054"
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "height": 50,
+        "width": 50,
+        "color": "#ff0054"
+      }
+    ]
+  }
+]
