@@ -1,6 +1,6 @@
 # klementine's dotfiles
 
-![klem profile pic](https://i.imgur.com/8ftn63a.png)
+![klem profile pic](https://0.gravatar.com/avatar/4c4b5a916f90ffb227d695b58f742852?s=128)
 
 These are my personal configs. You may not find them super useful, but they're here for anyone who wants to use them as a base or for ideas <3
 
