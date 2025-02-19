@@ -35,7 +35,7 @@ export VISUAL='nano'
 export ARCHFLAGS="-arch x86_64"
 export SSH_KEY_PATH="~/.ssh/id_ed25519"
 HISTSIZE=10000
-HISTFILE=~/.zshistory
+HISTFILE=$ZDOTDIR/.zhistory
 SAVEHIST=8000
 
 ## Aliases
@@ -49,3 +49,5 @@ alias gcc-ANSI="gcc-strict -std=c89"
 
 # Starship <3
 eval "$(starship init zsh)"
+
+fortune | cowsay
