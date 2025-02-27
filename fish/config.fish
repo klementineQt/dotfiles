@@ -2,6 +2,9 @@
 # klementineQt (Klementine Des Pêches)
 # klementineQt@proton.me
 
+# init this nifty cd alternative (we're rusting away)
+zoxide init --cmd cd fish | source
+
 # can't live wifout me starship
 starship init fish | source
 
