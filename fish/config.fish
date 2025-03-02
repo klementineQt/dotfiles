@@ -3,7 +3,7 @@
 # klementineQt@proton.me
 
 # init this nifty cd alternative (we're rusting away)
-zoxide init --cmd cd fish | source
+zoxide init --cmd z fish | source
 
 # can't live wifout me starship
 starship init fish | source
