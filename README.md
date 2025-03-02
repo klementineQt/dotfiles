@@ -2,16 +2,25 @@
 
 ![klem profile pic](https://0.gravatar.com/avatar/4c4b5a916f90ffb227d695b58f742852?s=128)
 
-These are my personal configs. You may not find them super useful, but they're here for anyone who wants to use them as a base or for ideas <3
+these are my personal configs. you may not find them super useful, but they're here for anyone who wants to use them as a base or for ideas <3
 
-Bear in mind that I use Arch on WSL and all the exported variables are my personal preferences, so you will probably need to adapt these a bit.
+some stuff is personalized, of course, so feel free to change things, get rid of variables, etc.
 
-**Warning:** I am an inefficient dunce and use an unnecessary stack of `starship` on top of `oh-my-zsh`, simply for the convenience of having always used the latter, and now using the prior for a synchronized look with PowerShell since I use Windows a bit. I also use a few additional plugins for `zsh` available in the Arch repos.
+**optional:** i use catppuccin as a theme for anything i possibly can! this includes `fish`, so you may want to follow the instructions from [here](https://github.com/catppuccin/fish)
 
-## Requirements
+## requirements
 
-[Arch Linux](https://wiki.archlinux.org/title/Installation_guide) *or* [ArchWSL](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/)
+all packages that are available in the Arch repos can be installed with the following command:
 
-All packages needed that are available in the Arch repos can be installed with the following command:
+`sudo pacman -Syu --needed fish fisher vim starship fd eza dust bat`
 
-`sudo pacman -Syu --needed zsh zsh-autosuggestions zsh-syntax-highlighting vim starship`
+## installation
+
+to use all files as-is, from inside the cloned repo dir, run the following commands:
+
+```bash
+cp -rt "$HOME/.config/" fish starship.toml
+cp .vimrc "$HOME"
+```
+
+**note:** the contents of the kzones.json file need to be manually copied into the UI config for the plugin in **System Settings > Window Management > KWin Scripts > KZones > Layouts**
