@@ -9,6 +9,12 @@ zoxide init --cmd z fish | source
 
 # interactive shell specific
 if status is-interactive
+    # configure editor env for vscode terminal usage, if remoted in
+    if set -q VSCODE_INJECTION
+        set -gx VISUAL "code --wait"
+        set -gx EDITOR "code --wait"
+    end
+
     # can't live wifout me starship
     starship init fish | source
 
