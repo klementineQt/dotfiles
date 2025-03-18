@@ -27,5 +27,3 @@ if status is-interactive
     # get a neat lil quote and make a cute lil cow say it
     fortune | cowsay
 end
-
-fish_add_path /home/klementine/.millennium/ext/bin
