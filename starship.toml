@@ -8,6 +8,7 @@ format = """
 [](red)\
 $os\
 $username\
+[󱢇 ](fg:yellow bg:red)\
 [](bg:lavender fg:red)\
 $directory\
 [](fg:lavender bg:sky)\
@@ -29,7 +30,9 @@ $conda\
 [](fg:mauve bg:flamingo)\
 $time\
 [ ](fg:flamingo)\
-$line_break$character"""
+$line_break\
+$character
+"""
 
 # Color palette
 palette = "catppuccin_mocha"
@@ -39,16 +42,6 @@ disabled = false
 style = "bg:red fg:surface0"
 
 [os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
 Alpine = ""
 Amazon = ""
 Android = ""
@@ -56,8 +49,19 @@ Arch = "󰣇"
 Artix = "󰣇"
 CentOS = ""
 Debian = "󰣚"
+EndeavourOS = ""
+Fedora = "󰣛"
+Gentoo = "󰣨"
+Linux = "󰌽"
+Macos = "󰀵"
+Manjaro = ""
+Mint = "󰣭"
+Raspbian = "󰐿"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+SUSE = ""
+Ubuntu = "󰕈"
+Windows = "󰍲"
 
 [username]
 show_always = true
@@ -68,15 +72,17 @@ format = '[ $user ]($style)'
 [directory]
 style = "fg:surface0 bg:lavender"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 8
 truncation_symbol = "…/"
+home_symbol = " "
 
 [directory.substitutions]
+"Developer" = "󰲋 "
 "Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
-"Developer" = "󰲋 "
+"Videos" = " "
 
 [git_branch]
 symbol = ""
