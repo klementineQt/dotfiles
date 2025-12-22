@@ -6,20 +6,20 @@ these are my personal configs. you may not find them super useful, but they're h
 
 some stuff is personalized, of course, so feel free to change things, get rid of variables, etc.
 
-**optional:** i use catppuccin as a theme for anything i possibly can! this includes `fish`, so you may want to follow the instructions from [here](https://github.com/catppuccin/fish)
+**optional:** i use catppuccin mocha (red if possible) as a theme for anything i possibly can! this includes `fish`, so you may want to follow the instructions from [here](https://github.com/catppuccin/fish)
 
 ## requirements
 
 all packages that are available in the Arch repos can be installed with the following command:
 
-`sudo pacman -Syu --needed fish fisher vim starship fd eza dust bat`
+`sudo pacman -Syu --needed fish fisher micro vim starship fd eza dust bat`
 
 ## installation
 
 to use all files as-is, from inside the cloned repo dir, run the following commands:
 
 ```bash
-cp -rt "$HOME/.config/" fish starship.toml
+cp -rt "$HOME/.config/" fish micro starship.toml
 cp .vimrc "$HOME"
 ```
 
