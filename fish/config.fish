@@ -13,6 +13,8 @@ if status is-interactive
     if set -q VSCODE_INJECTION
         set -gx VISUAL "code --wait"
         set -gx EDITOR "code --wait"
+    else
+        set -gx VISUAL "micro"
     end
 
     # can't live wifout me starship
