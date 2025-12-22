@@ -12,15 +12,14 @@ some stuff is personalized, of course, so feel free to change things, get rid of
 
 all packages that are available in the Arch repos can be installed with the following command:
 
-`sudo pacman -Syu --needed fish fisher micro vim starship fd eza dust bat`
+`sudo pacman -Syu --needed fish fisher micro starship fd eza dust bat`
 
 ## installation
 
-to use all files as-is, from inside the cloned repo dir, run the following commands:
+to use all files as-is, from inside the cloned repo dir, run the following command:
 
 ```bash
 cp -rt "$HOME/.config/" fish micro starship.toml
-cp .vimrc "$HOME"
 ```
 
 **note:** the contents of the kzones.json file need to be manually copied into the UI config for the plugin in **System Settings > Window Management > KWin Scripts > KZones > Layouts**
