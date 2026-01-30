@@ -17,6 +17,10 @@ if status is-interactive
         set -gx VISUAL "micro"
     end
 
+    # Format man pages
+    set -x MANROFFOPT "-c"
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+
     # can't live wifout me starship
     starship init fish | source
 
